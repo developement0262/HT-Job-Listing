@@ -1,0 +1,355 @@
+.htjl_container {
+    /*border: 2px solid #efefef;*/
+    padding: 5px;
+    /*border-radius: 8px;*/
+}
+.htjl_heading h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.job_name a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.job_location {
+    color: #7d7d7d;
+    padding-top: 8px;
+    font-weight: 500;
+}
+.job_location i {
+    color: #ff6600;
+}
+.htjl_listing {
+    border-bottom: 2px solid #efefef;
+    padding: 15px 0;
+}
+.htjl_listing:last-child {
+    border-bottom: none;
+}
+.htjl_detail_title h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+span.industry {
+    background: #ff6600;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.htjl_job_meta span {
+    margin-right: 25px;
+}
+.job_desc {
+    padding-bottom: 40px;
+}
+.job_desc h1, .job_req h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+.job_main_box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.job_desc_box {
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #f3f3f3;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+}
+.htjl_job_meta_box {
+    background: #fff;
+    border: 2px solid #f3f3f3;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 30%;
+    height: 100%;
+}
+.job_group_img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+.group-link {
+    vertical-align: center;
+}
+.htjl_job_meta_box .job_apply button.btn_job_apply {
+    width: 90%;
+}
+.side_bar_meta {
+    padding: 20px;
+    margin-top: 20px;
+}
+.side_bar_meta p {
+    margin-bottom: 10px;
+}
+.job_apply{text-align: center;margin-top: 20px;}
+.job_apply button.btn_job_apply {
+    background-color: #f60;
+    padding: 10px 30px;
+}
+.htjl_detail_title h1 span {
+    font-size: 18px;
+    margin-left: 5px;
+}
+/* The Modal (background) */
+.job_detail_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 80px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.job_detail_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 30px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.job_detail_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.job_detail_close:hover,
+.job_detail_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+form#job_detail_form {
+    margin-top: 50px;
+}
+table#job_detail_table td {
+    border-bottom: none;
+}
+.htjl_wd {
+    width: 100%;
+}
+.btn_center {
+    text-align: center;
+}
+button.btn_send_application {
+    background: #f60;
+}
+p.upload_err {
+    margin: 0;
+    color: red;
+}
+p.success_application {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    color: green;
+    padding: 20px 0;
+}
+.htjl-file-area {
+    width: 100%;
+    position: relative;
+}
+input#job_detail_resume2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.file-dummy {
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #f60;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+.file-dummy .htjl_upload_success {
+    color: #f60;
+}
+/*.htjl-file-area input#job_detail_resume2:valid + .file-dummy {
+    border-color: #f60;
+    background-color: #ffffff;
+}
+.htjl-file-area input#job_detail_resume2:valid + .file-dummy .success {
+    display: inline-block;
+    color: #f60;
+}
+.file-dummy .success {
+    display: none;
+}
+.htjl-file-area input#job_detail_resume2:valid + .file-dummy .default {
+    display: none;
+}*/
+
+
+@media only screen and (max-width: 991px) {
+    .job_detail_modal-content{
+        width: 90%;
+    }
+    .job_main_box {
+        flex-wrap: wrap;
+    }
+    .job_desc_box{
+        width: 100%;
+    }
+    .htjl_job_meta_box{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .htjl_job_meta_box {
+        width: 100%;
+    }
+    .htjl_detail_title h1{
+        font-size: 18px;
+    }
+    .htjl_job_meta span {
+        font-size: 14px;
+    }
+    .job_desc_box{
+        margin-right: 0px;
+    }
+}
+.job_desc h1, .job_req h1 {
+    font-weight: 600;
+}
+
+.group-link {
+    display: flex;
+}
+.group-link a {
+    display: block;
+}
+.group-link-img {
+    flex: 1;
+    width: 20px;
+    height: 18px;
+    padding-right: 5px;
+    margin-top: 3px;
+    display:table-cell;
+    vertical-align:middle;    
+}
+.group-link-url {
+    flex: 1;
+    display: table-cell;
+    vertical-align: middle; 
+    padding-bottom: 3px;
+}
+
+.job-group-avatar
+{
+    width: 100px;
+    height: 100px;
+        background-color: white;
+    line-height:100px;
+    text-align:center;
+        border: 1px solid #e7e9ec;      margin: 0 auto;
+    
+        border-color: #E7E9EC;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+
+}
+.job-group-avatar img
+{
+    vertical-align: middle;
+    max-width: 99px;
+    max-height: 99px;
+}
+
+
+.htjl_listing {
+    display: flex;
+}
+.htjl_job_meta_box {
+    height: 100%;
+}
+.job-group-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+.job-group-contact {
+    font-size: 16px;
+    font-weight: 600;
+}
+.job_avatar {
+    height: 60px;   
+    width: 60px;
+    line-height: 60px;
+    background-color: white;
+    text-align:center;
+    margin-right: 20px;
+
+    border: 1px solid #e7e9ec;  
+    border-color: #E7E9EC;
+
+}
+
+.job_avatar img {
+    vertical-align: middle;
+    max-width: 58px;
+    max-height: 60px;
+}
+
+.job-listing-details {
+    flex: 1;
+}
+
+/* Job Openings */
+.job_avatar{
+    max-height: 55px;
+    max-width: 55px;
+    line-height: 0px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.job_avatar img{
+    max-height: 55px;
+    max-width: 55px;
+}
+.job_location{
+    padding-top: 4px
+}
+.job_location , text{
+    font-size: 12px;
+}
+.htjl_listing{
+    border-bottom: none;
+    padding-bottom: 16px;
+    padding-top: 0px;
+}
+.htjl_container{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.item-avatar a{
+    font-size: 14px !important;
+}
